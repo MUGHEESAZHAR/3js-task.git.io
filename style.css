@@ -1,0 +1,78 @@
+body {
+  background-color: #bdc2d8;
+  font-family: Arial, sans-serif;
+  align-items: center;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 20px 0;
+}
+
+.cubeBtn,
+.sphereBtn,
+.coneBtn {
+  padding: 18px 45px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background: rgb(63, 56, 139);
+  backdrop-filter: blur(8px);
+  transition: 0.4s;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin: 10px;
+}
+
+.cubeBtn:hover,
+.sphereBtn:hover,
+.coneBtn:hover {
+  background: rgba(63, 56, 139, 0.607);
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.cubeBtn:active,
+.sphereBtn:active,
+.coneBtn:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  background-color: rgb(63, 56, 139);
+  color: rgb(255, 255, 255);
+  margin: 25px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.message {
+  background-color: rgb(63, 56, 139);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin: 25px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.scene {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.scene canvas {
+  border-radius: 20px;
+  overflow: hidden;
+}
